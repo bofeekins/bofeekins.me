@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bo Feekins</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
+<meta name="description" content="Bo Feekins, growth creative producer in New York City.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+<style>
+  /* Single narrow column of toggles, Notion-page feel. */
+  :root {
+    --bg: #ffffff;
+    --fg: #37352f;
+    --muted: #787774;
+    --hover: rgba(55, 53, 47, 0.06);
+    --green: #448361;
+    --red: #d44c47;
+    --blue: #337ea9;
+    --orange: #d9730d;
+    --purple: #9065b0;
+    --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #191919; --fg: #e3e2e0; --muted: #9b9a97; --hover: rgba(255, 255, 255, 0.06);
+      --green: #6bb38a; --red: #e7786f; --blue: #5fa8d3; --orange: #e5974a; --purple: #b391d1;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #191919; --fg: #e3e2e0; --muted: #9b9a97; --hover: rgba(255, 255, 255, 0.06);
+    --green: #6bb38a; --red: #e7786f; --blue: #5fa8d3; --orange: #e5974a; --purple: #b391d1;
+    color-scheme: dark;
+  }
+
+  body { margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding-block: clamp(48px, 12vh, 120px) 80px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  h1 { font-size: 40px; font-weight: 700; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .intro { margin: 0 0 32px; }
+
+  details { margin: 2px 0; }
+  summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    padding: 3px 2px;
+    border-radius: 4px;
+    width: fit-content;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary:hover { background: var(--hover); }
+  summary:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+  summary::before {
+    content: "";
+    width: 0; height: 0;
+    border-left: 6px solid currentColor;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin: 0 8px 0 6px;
+    transition: transform 0.15s ease;
+  }
+  details[open] > summary::before { transform: rotate(90deg); }
+  @media (prefers-reduced-motion: reduce) { summary::before { transition: none; } }
+
+  .body { padding: 4px 0 12px 28px; }
+  .label { margin: 8px 0 2px; }
+  ul { margin: 0; padding-left: 26px; }
+  .body > ul { padding-left: 22px; }
+  li { padding: 2px 0; }
+  li::marker { font-size: 0.9em; }
+
+  a { color: inherit; text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+  a:hover { opacity: 0.75; }
+  a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 2px; }
+  .c-green { color: var(--green); }
+  .c-red { color: var(--red); }
+  .c-blue { color: var(--blue); }
+  .c-orange { color: var(--orange); }
+  .c-purple { color: var(--purple); }
+
+  .contact { user-select: all; }
+  .signoff { margin-top: 40px; font-size: 20px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hey</h1>
+  <p class="intro">It’s Bo Feekins.</p>
+
+  <details>
+    <summary>Get to know me</summary>
+    <div class="body">
+      <p class="label">Current</p>
+      <ul>
+        <li>Growth at <a class="c-green" href="https://www.boldvoice.com" target="_blank" rel="noopener">BoldVoice</a> in New York City
+          <ul>
+            <li>200+ ad creatives a month for paid social at scale</li>
+            <li>Running our influencer program with 100+ creators</li>
+            <li>Building a UGC network of 10+ organic accounts doing 10M+ views a month</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="label">Previous</p>
+      <ul>
+        <li>First growth hire at <a class="c-blue" href="https://hofapp.com/" target="_blank" rel="noopener">HOF Technologies</a>, 100K users before a dollar of paid</li>
+        <li>Founded <a class="c-orange" href="https://www.instagram.com/insidearsenalfc/" target="_blank" rel="noopener">Inside Arsenal</a>, 150K+ followers and 50M+ views in its first year</li>
+        <li>City Manager for <a class="c-purple" href="https://streetfc.com/" target="_blank" rel="noopener">Street FC</a> Boston, 200+ games and a community of 100+ players</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Get to <em><strong>really</strong></em> know me</summary>
+    <div class="body">
+      <ul>
+        <li>Half American, half English</li>
+        <li>Born in Taiwan, raised in Thailand, high school in Kyiv, Ukraine</li>
+        <li>Traveled to 50+ countries across five continents</li>
+        <li>Studied sports communication at Emerson College, minor in entrepreneurship</li>
+        <li>Played soccer at Emerson, then came back to coach</li>
+        <li>Huge <span class="c-red">Arsenal</span> fan</li>
+        <li>Lived in Lisbon for two years and learned to surf</li>
+        <li>Top three TV shows of all time: The Sopranos, Succession, Breaking Bad</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Hit me up</summary>
+    <div class="body">
+      <ul>
+        <li><span class="contact">bofeekins (at) gmail (dot) com</span></li>
+        <li><a class="c-blue" href="https://www.linkedin.com/in/bofeekins/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </details>
+
+  <p class="signoff" aria-label="Wave">👋</p>
+</main>
+</body>
+</html>
