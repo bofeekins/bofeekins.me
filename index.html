@@ -52,7 +52,7 @@
     padding-right: max(16px, env(safe-area-inset-right, 0px));
   }
   h1 { font-size: 40px; font-weight: 700; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.01em; }
-  .intro { margin: 0 0 32px; }
+  .intro { margin: 0 0 20px; }
 
   details { margin: 2px 0; }
   summary {
@@ -96,6 +96,14 @@
   .c-orange { color: var(--orange); }
   .c-purple { color: var(--purple); }
 
+  .page-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    margin: 0 0 24px; padding: 3px 6px 3px 2px; border-radius: 4px;
+    text-decoration: none; font-weight: 600;
+  }
+  .page-link:hover { background: var(--hover); opacity: 1; }
+  .page-link .t { border-bottom: 1px solid var(--muted); }
+  .page-link .arrow { color: var(--muted); font-weight: 400; }
   .contact { user-select: all; }
   .signoff { margin-top: 40px; font-size: 20px; }
 </style>
@@ -104,6 +112,8 @@
 <main>
   <h1>Hey</h1>
   <p class="intro">It’s Bo Feekins.</p>
+
+  <a class="page-link" href="work.html" target="_blank" rel="noopener"><span aria-hidden="true">📂</span><span class="t">See my work</span><span class="arrow" aria-hidden="true">↗</span></a>
 
   <details>
     <summary>Get to know me</summary>

@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Work · Bo Feekins</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📂</text></svg>">
+<meta name="description" content="Selected work from Bo Feekins: paid social creative, influencer partnerships and Inside Arsenal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #37352f;
+    --muted: #787774;
+    --hover: rgba(55, 53, 47, 0.06);
+    --line: rgba(55, 53, 47, 0.09);
+    --tile: #f1f1ef;
+    --tile-2: #e9e9e6;
+    --callout: #f7f6f3;
+    --green: #448361;
+    --red: #d44c47;
+    --blue: #337ea9;
+    --orange: #d9730d;
+    --purple: #9065b0;
+    --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #191919; --fg: #e3e2e0; --muted: #9b9a97; --hover: rgba(255, 255, 255, 0.06);
+      --line: rgba(255, 255, 255, 0.09); --tile: #252525; --tile-2: #2f2f2f; --callout: #202020;
+      --green: #6bb38a; --red: #e7786f; --blue: #5fa8d3; --orange: #e5974a; --purple: #b391d1;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #191919; --fg: #e3e2e0; --muted: #9b9a97; --hover: rgba(255, 255, 255, 0.06);
+    --line: rgba(255, 255, 255, 0.09); --tile: #252525; --tile-2: #2f2f2f; --callout: #202020;
+    --green: #6bb38a; --red: #e7786f; --blue: #5fa8d3; --orange: #e5974a; --purple: #b391d1;
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding-block: clamp(32px, 8vh, 80px) 80px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  a { color: inherit; text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+  a:hover { opacity: 0.75; }
+  a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 2px; }
+
+  .back { display: inline-block; color: var(--muted); text-decoration: none; font-size: 14px; margin-bottom: 28px; }
+  h1 { font-size: 40px; font-weight: 700; line-height: 1.2; margin: 0 0 40px; letter-spacing: -0.01em; }
+
+  .callout {
+    display: flex; gap: 10px; align-items: flex-start;
+    background: var(--callout); border-radius: 6px;
+    padding: 12px 14px; margin: 0 0 40px; font-size: 14px;
+  }
+
+  section { padding-top: 28px; margin-top: 28px; border-top: 1px solid var(--line); }
+  section:first-of-type { border-top: 0; margin-top: 0; padding-top: 0; }
+  h2 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
+  .sub { margin: 0 0 18px; color: var(--muted); }
+
+  .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  @media (max-width: 720px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } }
+
+  .grid.five { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  @media (max-width: 720px) { .grid.five { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .thumb .play { position: relative; }
+  .thumb.fit { background: #000; display: block; }
+  .thumb.fit img { left: 9.5%; top: 16.4%; width: 81%; height: 62.5%; border-radius: 8% / 5.9%; }
+  .views {
+    position: absolute; left: 8px; bottom: 8px;
+    display: inline-flex; align-items: center; gap: 5px;
+    color: #fff; font-size: 12px; font-weight: 700;
+    background: rgba(0, 0, 0, 0.6); padding: 2px 6px; border-radius: 4px;
+  }
+  .views svg { width: 14px; height: 14px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .card { display: block; text-decoration: none; }
+  .card:hover { opacity: 1; }
+  .thumb {
+    position: relative;
+    aspect-ratio: 9 / 16;
+    border-radius: 8px;
+    background: linear-gradient(160deg, var(--tile) 0%, var(--tile-2) 100%);
+    display: grid; place-items: center;
+    overflow: hidden;
+    transition: transform 0.15s ease;
+  }
+  .card:hover .thumb { transform: translateY(-2px); }
+  @media (prefers-reduced-motion: reduce) { .thumb { transition: none; } .card:hover .thumb { transform: none; } }
+  .play {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--bg); display: grid; place-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
+  .play::before {
+    content: ""; margin-left: 3px;
+    border-left: 11px solid var(--fg);
+    border-top: 7px solid transparent; border-bottom: 7px solid transparent;
+  }
+  .tag {
+    position: absolute; top: 8px; left: 8px;
+    font-size: 11px; font-weight: 600; padding: 2px 6px; border-radius: 4px;
+    background: var(--bg); color: var(--muted);
+  }
+  .cap { margin: 8px 0 0; font-size: 14px; font-weight: 600; line-height: 1.35; }
+  .meta { margin: 2px 0 0; font-size: 13px; color: var(--muted); }
+
+  .c-green { color: var(--green); }
+  .c-red { color: var(--red); }
+  .c-blue { color: var(--blue); }
+  .c-orange { color: var(--orange); }
+
+  .lightbox {
+    position: fixed; inset: 0; z-index: 10;
+    background: rgba(15, 15, 15, 0.85);
+    display: grid; place-items: center; padding: 24px 16px;
+  }
+  .lightbox[hidden] { display: none; }
+  .lightbox video { max-height: min(86vh, 900px); max-width: 100%; aspect-ratio: 9 / 16; border-radius: 10px; background: #000; }
+  .lightbox .close {
+    position: absolute; top: 14px; right: 16px;
+    background: none; border: 0; color: #fff; font: 600 28px/1 var(--font); cursor: pointer; padding: 6px;
+  }
+  .note { margin: 12px 0 0; font-size: 13px; color: var(--muted); }
+  .signoff { margin-top: 56px; font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">← Bo Feekins</a>
+  <h1>Work</h1>
+  <section>
+    <h2>Paid social creative</h2>
+    <p class="sub"><a class="c-green" href="https://www.boldvoice.com" target="_blank" rel="noopener">BoldVoice</a> · 100+ ad creatives a month for Meta</p>
+    <div class="grid five">
+      <a class="card" href="video/aaron.mp4" data-video="video/aaron.mp4"><div class="thumb"><img src="img/ad-aaron.jpg" alt="Same person side by side on day 1 and day 90 with the app between them" loading="lazy"><span class="tag">Meta ad</span><span class="play"></span></div><p class="cap">Day 1 vs Day 90</p></a>
+      <a class="card" href="video/portuguese.mp4" data-video="video/portuguese.mp4"><div class="thumb"><img src="img/ad-portuguese.jpg" alt="Podcast-style creator introducing BoldVoice" loading="lazy"><span class="tag">Meta ad</span><span class="play"></span></div><p class="cap">Podcast</p></a>
+      <a class="card" href="video/eliza.mp4" data-video="video/eliza.mp4"><div class="thumb"><img src="img/ad-eliza.jpg" alt="Extreme close-up of a mouth with the caption your tongue is" loading="lazy"><span class="tag">Meta ad</span><span class="play"></span></div><p class="cap">Up Close and Personal</p></a>
+      <a class="card" href="video/shogo.mp4" data-video="video/shogo.mp4"><div class="thumb"><img src="img/ad-shogo.jpg" alt="Creator talking to camera about 90 days of practice" loading="lazy"><span class="tag">Meta ad</span><span class="play"></span></div><p class="cap">90 Days</p></a>
+      <a class="card" href="video/maria.mp4" data-video="video/maria.mp4"><div class="thumb"><img src="img/ad-maria.jpg" alt="A couple on a sofa talking about learning English pronunciation" loading="lazy"><span class="tag">Meta ad</span><span class="play"></span></div><p class="cap">Family Story</p></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Influencer partnerships</h2>
+    <p class="sub"><a class="c-green" href="https://www.boldvoice.com" target="_blank" rel="noopener">BoldVoice</a> · 100+ creator videos across Instagram, TikTok, and YouTube</p>
+    <div class="grid five">
+      <a class="card" href="https://www.instagram.com/reel/Dc3Tu98MX5j/" target="_blank" rel="noopener"><div class="thumb"><img src="img/languy.jpg" alt="Street interview with a Korean speaker" loading="lazy"><span class="tag">Instagram</span><span class="play"></span></div><p class="cap">Street Interview</p></a>
+      <a class="card" href="https://youtu.be/CBgTR_YU0co?t=35" target="_blank" rel="noopener"><div class="thumb"><img src="img/elizabeth.jpg" alt="Taiwanese boba giveaway video thumbnail" loading="lazy"><span class="tag">YouTube</span><span class="play"></span></div><p class="cap">Lifestyle YouTuber</p></a>
+      <a class="card" href="https://www.instagram.com/reel/DXQJ5blgHfH/" target="_blank" rel="noopener"><div class="thumb"><img src="img/profe-raff.jpg" alt="Accent coach practicing the AH vowel with the BoldVoice app" loading="lazy"><span class="tag">Instagram</span><span class="play"></span></div><p class="cap">English Lesson</p></a>
+      <a class="card" href="https://www.tiktok.com/@englishbygiovana/video/7670513464636460306" target="_blank" rel="noopener"><div class="thumb"><img src="img/giovana.jpg" alt="English teacher skit set in a restaurant" loading="lazy"><span class="tag">TikTok</span><span class="play"></span></div><p class="cap">English Skit</p></a>
+      <a class="card" href="https://www.instagram.com/reel/DeW7l-XBaqS/" target="_blank" rel="noopener"><div class="thumb"><img src="img/yudi.jpg" alt="Creator saying your English accent could cost you 20% of your salary" loading="lazy"><span class="tag">Instagram</span><span class="play"></span></div><p class="cap">Career Lesson</p></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Inside Arsenal</h2>
+    <p class="sub">I started Inside Arsenal to help football podcasts grow on social, turning parts of their episodes into short-form video cross-posted to <a class="c-orange" href="https://www.instagram.com/insidearsenalfc/" target="_blank" rel="noopener">Instagram</a> and <a class="c-orange" href="https://www.tiktok.com/@insidearsenalfc" target="_blank" rel="noopener">TikTok</a>. 150K+ followers and 50M+ views in year one.</p>
+    <div class="grid five">
+      <a class="card" href="https://www.instagram.com/reel/DYmW51qRvd3/" target="_blank" rel="noopener" data-views="376K" data-tiktok="https://www.tiktok.com/@insidearsenalfc/video/7642307623777275167"><div class="thumb fit"><img src="img/ia-arsecast.jpg" alt="Emirates Stadium under red smoke with the caption dusting yourself down" loading="lazy"><span class="views"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.7 9.2 1.5 12c1.2 2.8 5 7 10.5 7s9.3-4.2 10.5-7C21.3 9.2 17.5 5 12 5Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" fill="currentColor"/></svg>376K<span class="sr"> combined views on Instagram and TikTok</span></span></div><p class="cap">Arseblog Arsecast</p></a>
+      <a class="card" href="https://www.instagram.com/reel/DNx-z8y2vlZ/" target="_blank" rel="noopener" data-views="354K" data-tiktok="https://www.tiktok.com/@insidearsenalfc/video/7542526055999982880"><div class="thumb fit"><img src="img/ia-handbrake-wright.jpg" alt="Ian Wright lifting the Premier League trophy" loading="lazy"><span class="views"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.7 9.2 1.5 12c1.2 2.8 5 7 10.5 7s9.3-4.2 10.5-7C21.3 9.2 17.5 5 12 5Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" fill="currentColor"/></svg>354K<span class="sr"> combined views on Instagram and TikTok</span></span></div><p class="cap">Handbrake Off</p></a>
+      <a class="card" href="https://www.instagram.com/reel/DU-RpF8iD1P/" target="_blank" rel="noopener" data-views="311K" data-tiktok="https://www.tiktok.com/@insidearsenalfc/video/7608861408398265633"><div class="thumb fit"><img src="img/ia-arsenalvision.jpg" alt="Martin Odegaard celebrating at the Emirates" loading="lazy"><span class="views"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.7 9.2 1.5 12c1.2 2.8 5 7 10.5 7s9.3-4.2 10.5-7C21.3 9.2 17.5 5 12 5Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" fill="currentColor"/></svg>311K<span class="sr"> combined views on Instagram and TikTok</span></span></div><p class="cap">ArsenalVision Podcast</p></a>
+      <a class="card" href="https://www.instagram.com/reel/DNlB-iKR7S-/" target="_blank" rel="noopener" data-views="297K" data-tiktok="https://www.tiktok.com/@insidearsenalfc/video/7540659733556972833"><div class="thumb fit"><img src="img/ia-athletic.jpg" alt="Pep Guardiola and Mikel Arteta on the training ground" loading="lazy"><span class="views"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.7 9.2 1.5 12c1.2 2.8 5 7 10.5 7s9.3-4.2 10.5-7C21.3 9.2 17.5 5 12 5Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" fill="currentColor"/></svg>297K<span class="sr"> combined views on Instagram and TikTok</span></span></div><p class="cap">The Athletic FC Podcast</p></a>
+      <a class="card" href="https://www.instagram.com/reel/DYpTatDRqkH/" target="_blank" rel="noopener" data-views="289K" data-tiktok="https://www.tiktok.com/@insidearsenalfc/video/7642732000008211743"><div class="thumb fit"><img src="img/ia-stadio.jpg" alt="Declan Rice holding up his Arsenal number 41 shirt" loading="lazy"><span class="views"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.7 9.2 1.5 12c1.2 2.8 5 7 10.5 7s9.3-4.2 10.5-7C21.3 9.2 17.5 5 12 5Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" fill="currentColor"/></svg>289K<span class="sr"> combined views on Instagram and TikTok</span></span></div><p class="cap">Stadio Podcast</p></a>
+    </div>
+    <p class="note">Views combined across Instagram and TikTok.</p>
+  </section>
+
+  <section>
+    <h2>Organic social creative</h2>
+    <p class="sub"><a class="c-blue" href="https://hofapp.com/" target="_blank" rel="noopener">HOF Technologies</a> · 50M+ views and 100K users acquired before paid, all driven by organic</p>
+    <div class="grid five">
+      <a class="card" href="https://www.tiktok.com/@hof.app/video/7207836765753707819" target="_blank" rel="noopener"><div class="thumb"><img src="img/hof-research.jpg" alt="NBA game footage with the caption here is how we research NBA parlays with a 100% hit rate" loading="lazy"><span class="tag">TikTok</span><span class="play"></span><span class="views"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.7 9.2 1.5 12c1.2 2.8 5 7 10.5 7s9.3-4.2 10.5-7C21.3 9.2 17.5 5 12 5Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" fill="currentColor"/></svg>841K<span class="sr"> views</span></span></div><p class="cap">Parlay Research</p></a>
+      <a class="card" href="https://x.com/hofapp/status/1730246702148284814" target="_blank" rel="noopener"><div class="thumb"><img src="img/hof-x.jpg" alt="HOF app screen showing an 8-leg same game parlay that hit in the last three games" loading="lazy"><span class="tag">X</span><span class="views"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.7 9.2 1.5 12c1.2 2.8 5 7 10.5 7s9.3-4.2 10.5-7C21.3 9.2 17.5 5 12 5Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" fill="currentColor"/></svg>624K<span class="sr"> impressions</span></span></div><p class="cap">Parlay Giveaway</p></a>
+      <a class="card" href="https://www.tiktok.com/@hof.app/video/7181832885396180266" target="_blank" rel="noopener"><div class="thumb"><img src="img/hof-parlay.jpg" alt="NBA game footage with the caption need an NBA parlay that has hit in 100% of games this season" loading="lazy"><span class="tag">TikTok</span><span class="play"></span><span class="views"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.7 9.2 1.5 12c1.2 2.8 5 7 10.5 7s9.3-4.2 10.5-7C21.3 9.2 17.5 5 12 5Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" fill="currentColor"/></svg>304K<span class="sr"> views</span></span></div><p class="cap">100% Hit Rate</p></a>
+      <a class="card" href="https://www.tiktok.com/@hof.app/video/7279027967785831723" target="_blank" rel="noopener"><div class="thumb"><img src="img/hof-nfl.jpg" alt="NFL game footage with the caption here are 3 of the best touchdown props for NFL Sunday" loading="lazy"><span class="tag">TikTok</span><span class="play"></span><span class="views"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.7 9.2 1.5 12c1.2 2.8 5 7 10.5 7s9.3-4.2 10.5-7C21.3 9.2 17.5 5 12 5Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" fill="currentColor"/></svg>136K<span class="sr"> views</span></span></div><p class="cap">Player Props</p></a>
+      <a class="card" href="https://www.tiktok.com/@hof.app/video/7220775451508133163" target="_blank" rel="noopener"><div class="thumb"><img src="img/hof-popular.jpg" alt="NBA game footage with the caption do not trust FanDuel popular parlays" loading="lazy"><span class="tag">TikTok</span><span class="play"></span><span class="views"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.7 9.2 1.5 12c1.2 2.8 5 7 10.5 7s9.3-4.2 10.5-7C21.3 9.2 17.5 5 12 5Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" fill="currentColor"/></svg>118K<span class="sr"> views</span></span></div><p class="cap">Popular Parlays</p></a>
+    </div>
+  </section>
+
+  <p class="signoff">Let’s chat: bofeekins (at) gmail (dot) com 👋</p>
+</main>
+<div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Video player">
+  <button class="close" type="button" aria-label="Close video">×</button>
+  <video controls playsinline></video>
+</div>
+<script>
+  const box = document.querySelector(".lightbox");
+  const player = box.querySelector("video");
+  const close = () => { player.pause(); player.removeAttribute("src"); player.load(); box.hidden = true; };
+  document.querySelectorAll("[data-video]").forEach((card) => {
+    card.addEventListener("click", (e) => {
+      e.preventDefault();
+      player.src = card.dataset.video;
+      box.hidden = false;
+      player.play().catch((err) => console.warn("Autoplay blocked; tap play to start.", err));
+    });
+  });
+  box.addEventListener("click", (e) => { if (e.target === box) close(); });
+  box.querySelector(".close").addEventListener("click", close);
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !box.hidden) close(); });
+</script>
+</body>
+</html>
